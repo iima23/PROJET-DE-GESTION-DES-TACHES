@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+typedef struct {
+    char description[40];
+    int annee_d_echeance;
+    int priorite;
+} tache;
+
+tache T[100];               // liste des taches
+int nbretaches, i, j, pos;            // variables globales
+
+void afficherMenu() {
+    printf("1. ajouter une tache\n");
+    printf("2. afficher liste des taches\n");
+    printf("3. supprimer une tache\n");
+    printf("4. modifier une tache\n");
+    printf("5. trier les taches par annee croissante\n");
+    printf("6. trier les taches par annee decroissante\n");
+    printf("7. fin\n");
+    printf("entrer votre choix : ");
+}
+
